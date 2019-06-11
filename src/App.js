@@ -12,7 +12,7 @@ const App = () => {
         <h1 className="App-title">Chat between Blah and Blah</h1>
       </header>
       <main className="App-main">
-        <Chatlog messages={chatMessages} />
+        <Chatlog messages={ chatMessages } />
       </main>
     </div>
   );
