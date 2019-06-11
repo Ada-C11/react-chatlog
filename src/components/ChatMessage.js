@@ -8,13 +8,13 @@ const messageTimestamp = (props) => {
 
 const ChatMessage = (props) => {
   return (
-    <section className="entry-bubble">
-      <div className="chat-entry">
-        <h3 className="entry-name">{ props.sender }</h3>
+    <div className="chat-entry local">
+      <h3 className="entry-name">{ props.sender }</h3>
+      <div className="entry-bubble">
         <p className="entry-body">{ props.body }</p>
         <p className="entry-time">{ messageTimestamp(props.timeStamp) }</p>
       </div>
-    </section>
+    </div>
   );
 };
 
