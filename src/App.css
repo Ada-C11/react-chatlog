@@ -2,11 +2,11 @@
 /* App styles */
 /**************/
 
-.App {
+.App { /* used */
   background-color: lightskyblue;
 }
 
-.App-header {
+.App-header { /* used */
   background-color: #222;
   padding-bottom: 0.5rem;
   color: white;
@@ -15,12 +15,12 @@
   z-index: 100;
 }
 
-.App-main {
+.App-main { /* used */
   padding-top: 7rem;
   padding-bottom: 5rem;
 }
 
-.App-title {
+.App-title { /* used */
   text-align: center;
   font-size: 1.5em;
 }
@@ -29,15 +29,15 @@
 /* Chat message styles */
 /***********************/
 
-.chat-entry {
+.chat-entry { /* used */
   margin: 1rem;
 }
 
-.chat-entry:last-child {
+.chat-entry:last-child { /* used */
   margin-bottom: 0;
 }
 
-.entry-bubble {
+.entry-bubble { /* used */
   width: fit-content;
   min-width: 10rem;
   max-width: 50rem;
@@ -50,16 +50,16 @@
   -moz-border-radius: 30px;
 }
 
-.entry-bubble:hover {
+.entry-bubble:hover { /* used */
   background-color: #fefea2;
 }
 
-.entry-name {
+.entry-name { /* used */
   margin-bottom: 0.5rem;
   font-size: medium;
 }
 
-.entry-body {
+.entry-body { /* used */
   line-height: 1.5em;
 
   margin-top: 0;
@@ -67,7 +67,7 @@
   -webkit-margin-after: 0em;
 }
 
-.entry-time {
+.entry-time { /* used */
   font-size: x-small;
   margin-bottom: 0.1rem;
   margin-right: 0.5rem;
@@ -75,7 +75,7 @@
 }
 
 /* Chat bubble arrow styling */
-.entry-bubble:before{
+.entry-bubble:before{ /* used */
   content: ' ';
   position: relative;
   width: 0;
