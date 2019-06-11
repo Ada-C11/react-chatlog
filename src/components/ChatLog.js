@@ -4,12 +4,12 @@ import Message from './Message.js';
 const ChatLog = (props) => {
     const chatLogComponents = props.chats.map( (message, i) => {
         return (
-          <li key={i}>
+          <p key={i} className='chat-log'>
             <Message
               sender={ message.sender }
               body={ message.body } 
               timestamp={ message.timeStamp }/>
-          </li>
+          </p>
         );
       });
     

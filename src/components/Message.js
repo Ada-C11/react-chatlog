@@ -3,15 +3,15 @@ import Timestamp from './Timestamp';
 
 const Message = (props) => {
     return (
-        <section>
-            <h5>
+        <section className='chat-entry local'>
+            <h5 className='entry-name'>
                 {props.sender}
             </h5>
-            <div>
-                <p>
+            <div className='entry-bubble'>
+                <p className='entry-body'>
                     {props.body}
                 </p>
-                <h5>
+                <h5 className='entry-time'>
                     <Timestamp time={props.timestamp}/>
                 </h5>
             </div>
