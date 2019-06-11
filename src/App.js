@@ -1,21 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import chatMessages from './data/messages.json';
 import ChatLog from './components/ChatLog';
+import Header from './components/Header';
 
 
 const App = () => {
   console.log(chatMessages);
 
-  const message = chatMessages[0]
-
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 className="App-title">Application title</h1>
-      </header>
+      <Header messages={chatMessages} />
       <main className="App-main">
-        <Message message={message}/>
+        <ChatLog messages={chatMessages} />
       </main>
     </div>
   );
