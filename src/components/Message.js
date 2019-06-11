@@ -1,11 +1,10 @@
 import React from 'react';
-import ChatLog from './ChatLog';
 import Timestamp from './Timestamp';
 import PropTypes from 'prop-types';
 
 const Message = (props) => {
   return (
-    <section>
+    <section className="chat-entry local">
         <div className="entry-name">{ props.sender }</div>
         <section className="entry-bubble">
             <p className="event-body">{ props.body }</p>
