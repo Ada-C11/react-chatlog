@@ -4,12 +4,7 @@ import chatMessages from './data/messages.json';
 import ChatContainer from './components/ChatContainer';
 
 const App = () => {
-  const names = [];
-  chatMessages.forEach(object => {
-    if (!names.includes(object.sender)) {
-      names.push(object.sender);
-    }
-  });
+  const names = getNames(chatMessages);
   return (
     <div className="App">
       <header className="App-header">
@@ -23,4 +18,13 @@ const App = () => {
   );
 };
 
+const getNames = messages => {
+  const names = [];
+  messages.forEach(object => {
+    if (!names.includes(object.sender)) {
+      names.push(object.sender);
+    }
+  });
+  return names;
+};
 export default App;
