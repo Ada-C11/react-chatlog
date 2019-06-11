@@ -11,4 +11,6 @@ const MessageLog = () => {
             />
         </div>
     );
-}
+};
+
+export default MessageLog;
