@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Timestamp from './Timestamp';
 
 const Chat = props => {
-  const location = props.sender == 'Estragon' ? 'local' : 'remote';
+  const location = props.sender === 'Estragon' ? 'local' : 'remote';
   return (
     <article className={'chat-entry ' + location}>
       <h1 className="entry-name">{props.sender}</h1>
