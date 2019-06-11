@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">Chat Between {chatMessages[0]["sender"]} and {chatMessages[1]["sender"]}</h1>
       </header>
       <main className="App-main">
         <Message />
