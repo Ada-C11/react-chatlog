@@ -1,5 +1,6 @@
 import React from 'react';
 import Messages from './Messages';
+import './ChatLog';
 
 const ChatLog = (props) => {
     const chats = props.messages.map((chat, i) => {
