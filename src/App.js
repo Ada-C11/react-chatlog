@@ -11,7 +11,7 @@ const App = () => {
       <header className="App-header">
         <h1 className="App-title">It's the End of the World as We Know It</h1>
       </header>
-      <main className="App-main">
+      <main className="App-main chat-log">
         <ChatLog messages={ chatMessages } />
       </main>
     </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import './ChatLog.css';
 import Message from './Message';
 import PropTypes from 'prop-types';
 
@@ -19,18 +18,14 @@ const ChatLog = (props) => {
   });
 
   return (
-    <section>
-    <section>
+    <section className="chat-entry local">
       { MessageComponents }
     </section>
-  </section>
   );
 }
 
 ChatLog.propTypes = {
-    sender: PropTypes.string.isRequired,
-    body: PropTypes.string.isRequired,
-    timeStamp: PropTypes.string.isRequired,
+    messages: PropTypes.array.isRequired,
   };
 
 export default ChatLog;

@@ -1,18 +1,22 @@
 import React from 'react';
-import './Message.css';
 import ChatLog from './ChatLog';
 import Timestamp from './Timestamp';
+import PropTypes from 'prop-types';
 
 const Message = (props) => {
   return (
-    <section className="timeline timeline-event">
-      <span className="event-person">{ props.sender }</span>
-      <span className="event-time"><Timestamp time={ props.timeStamp } /></span>
-      <p className="event-status">
-        { props.body }
-      </p>
+    <section className="entry-bubble">
+      <p className="entry-name">{ props.sender }</p>
+      <p className="event-body">{ props.body }</p>
+      <p className="entry-time"><Timestamp time={ props.timeStamp } /></p>
     </section>
   );
 }
+
+Message.propTypes = {
+    sender: PropTypes.string.isRequired,
+    body: PropTypes.string.isRequired,
+    timeStamp: PropTypes.string.isRequired,
+  };
 
 export default Message;
