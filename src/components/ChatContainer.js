@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Chat from './Chat';
+import './ChatContainer.css';
 
 const ChatContainer = props => {
   const chatLog = props.messages.map((message, i) => {
