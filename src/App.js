@@ -3,9 +3,8 @@ import './App.css';
 import chatMessages from './data/messages.json';
 import ChatLog from './components/ChatLog';
 
-class App extends Component {
-  render() {
-    console.log(chatMessages);
+const App = () => {
+  console.log(chatMessages);
 
     return (
       <div className="App">
