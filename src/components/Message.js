@@ -16,7 +16,7 @@ const Message = () => {
     ];
 
     return (
-      <section>
+      <section className="chat-entry local">
         <p> {staticMessages[0]["sender"]} </p>
         <p> {staticMessages[0]["body"]} </p>
         <p> <Timestamp time={staticMessages[0]["timeStamp"]} /> </p>
