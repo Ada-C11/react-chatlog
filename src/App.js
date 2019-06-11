@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import chatMessages from './data/messages.json';
 
-import Message from './components/Message';
+import MessageLog from './components/MessageLog';
 
 const App = () => {
   console.log(chatMessages);
@@ -13,7 +13,7 @@ const App = () => {
         <h1 className="App-title">Chat Between {chatMessages[0]["sender"]} and {chatMessages[1]["sender"]}</h1>
       </header>
       <main className="App-main">
-        <Message />
+        <MessageLog allMessages={chatMessages}/>
       </main>
     </div>
   );
