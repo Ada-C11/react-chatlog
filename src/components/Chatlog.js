@@ -6,13 +6,12 @@ const postData = (props) =>
   props.messages.map( (message, i) => {
     return (
       <ChatMessage sender={ message.sender } body={ message.body } timeStamp={ message.timeStamp } />
-    )
-})
+    );
+});
 
 const Chatlog = (props) => {
   return (
-    <section>
-      {/* <h1>I Work!</h1> */}
+    <section className="chat-log">
       { postData(props) }
     </section>
   );
