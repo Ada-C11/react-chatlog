@@ -6,18 +6,20 @@ const ChatLog = (props) => {
   
   const entryComponents = props.entries.map((entry, i) => {
     return ( 
-      <div key={i}>
+      <li key={i}>
         <ChatBubble
           sender={entry.sender} 
           body={entry.body}
           timestamp={entry.timeStamp} /> 
-      </div>
+      </li>
     );
   });
 
   return (
     <section className='chat-log'>
-      {entryComponents}
+      <ul>
+        {entryComponents}
+      </ul>
     </section>
   );
 };
