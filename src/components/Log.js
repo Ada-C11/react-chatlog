@@ -3,8 +3,8 @@ import Message from './Message';
 
 const Log = props => {
   const messages = props.messages.map((entry, i) => {
-    const sender = i % 2 === 0 ? 'local' : 'remote';
-    return <Message message={{ ...entry, sender }} />;
+    const person = i % 2 === 0 ? 'local' : 'remote';
+    return <Message message={{ ...entry, person }} />;
   });
   return <section className="chat-log">{messages}</section>;
 };

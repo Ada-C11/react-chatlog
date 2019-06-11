@@ -2,7 +2,7 @@ import React from 'react';
 import Timestamp from './Timestamp';
 
 const Message = props => {
-  const senderClass = `chat-entry ${props.message.sender}`;
+  const senderClass = `chat-entry ${props.message.person}`;
   return (
     <article className={senderClass}>
       <h1 className="entry-name">{props.message.sender}</h1>
