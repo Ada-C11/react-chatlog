@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">React Chat Log</h1>
       </header>
       <main className="App-main">
         <ChatLog chatMessages={chatMessages}/>

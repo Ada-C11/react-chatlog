@@ -29,7 +29,7 @@
 /* Chat message styles */
 /***********************/
 
-.chat-entry {
+/* .chat-entry {
   margin: 1rem;
 }
 
@@ -48,9 +48,9 @@
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
-}
+} */
 
-.entry-bubble:hover {
+/* .entry-bubble:hover {
   background-color: #fefea2;
 }
 
@@ -72,10 +72,10 @@
   margin-bottom: 0.1rem;
   margin-right: 0.5rem;
   color: #bbb;
-}
+} */
 
 /* Chat bubble arrow styling */
-.entry-bubble:before{
+/* .entry-bubble:before{
   content: ' ';
   position: relative;
   width: 0;
@@ -89,7 +89,7 @@
 }
 
 /* "local" messages are shown on the left side */
-.chat-entry.local {
+/* .chat-entry.local {
   text-align: left;
 }
 
@@ -105,10 +105,10 @@
 
 .chat-entry.local .entry-bubble:hover:before {
   border-color: #fefea2 transparent transparent transparent;
-}
+} */
 
 /* "remote" messages are shown on the right side, in blue */
-.chat-entry.remote {
+/* .chat-entry.remote {
   text-align: right;
 }
 
@@ -135,13 +135,13 @@
 
 .chat-entry.remote .entry-bubble:hover:before {
   border-color: #a9f6f6 transparent transparent transparent;
-}
+} */
 
 /*******************/
 /* Chat log styles */
 /*******************/
 
-.chat-log {
+/* .chat-log {
   max-width: 50rem;
   margin: auto;
-}
+} */

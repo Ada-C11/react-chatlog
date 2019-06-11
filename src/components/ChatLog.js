@@ -4,12 +4,12 @@ import Message from './Message';
 const ChatLog = (props) => {
     const allMessages = props.chatMessages.map((message, i) => {
         return (
-            <div>
+            <section className="chat-log">
                 <Message 
                     sender={message.sender}
                     body={message.body}
                     timestamp={message.timestamp} />
-            </div>
+            </section>
         )
     });
     return (
