@@ -5,10 +5,12 @@ import PropTypes from 'prop-types';
 
 const Message = (props) => {
   return (
-    <section className="entry-bubble">
-      <p className="entry-name">{ props.sender }</p>
-      <p className="event-body">{ props.body }</p>
-      <p className="entry-time"><Timestamp time={ props.timeStamp } /></p>
+    <section>
+        <div className="entry-name">{ props.sender }</div>
+        <section className="entry-bubble">
+            <p className="event-body">{ props.body }</p>
+            <div className="entry-time"><Timestamp time={ props.timeStamp }/></div>
+        </section>
     </section>
   );
 }

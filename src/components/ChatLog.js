@@ -8,7 +8,7 @@ const ChatLog = (props) => {
 
   const MessageComponents = messages.map( (message, i) => {
     return (
-      <div key={i}>
+      <div key={i} className="chat-entry local">
         <Message 
           sender={ message.sender }
           body={ message.body }
@@ -18,7 +18,7 @@ const ChatLog = (props) => {
   });
 
   return (
-    <section className="chat-entry local">
+    <section>
       { MessageComponents }
     </section>
   );
