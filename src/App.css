@@ -145,3 +145,9 @@
   max-width: 50rem;
   margin: auto;
 }
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
