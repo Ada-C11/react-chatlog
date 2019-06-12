@@ -4,8 +4,6 @@ import chatMessages from './data/messages.json';
 import ChatLog from './components/ChatLog';
 
 const App = () => {
-  console.log(chatMessages);
-
   return (
     <div className="App">
       <header className="App-header">
