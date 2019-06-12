@@ -16,7 +16,9 @@ const MessageLog = (props) => {
     });
 
     return (
-        { accessJsonMessages }
+        <section>
+            { accessJsonMessages }
+        </section>
     );
 };
 
