@@ -15,7 +15,7 @@ const ChatContainer = props => {
       </li>
     );
   });
-  return <ul>{chatLog}</ul>;
+  return <ul className="chat-log">{chatLog}</ul>;
 };
 
 ChatContainer.propTypes = PropTypes.arrayOf(
