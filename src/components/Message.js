@@ -3,14 +3,8 @@ import Timestamp from './Timestamp';
 import PropTypes from 'prop-types';
 
 const Message = (props) => {
-  const sendee = props.sender
-  let chatClass = 'chat-entry remote'
-    if (sendee === "Vladimir") {
-      chatClass = "chat-entry local";
-    }
-
     return (
-      <section className={ chatClass }>
+      <section className={`chat-entry ${props.sender === "Vladimir" ? "local" : "remote"}`}>
           <div className="entry-name">{ props.sender }</div>
           <section className="entry-bubble">
               <p className="event-body">{ props.body }</p>
