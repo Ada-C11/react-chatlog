@@ -2,10 +2,8 @@ import React from 'react';
 import Timestamp from './Timestamp';
 
 const Message = (props) => {
-    const sentFrom = props.sender == "Vladimir";
-
     return (
-      <section className={`chat-entry ${sentFrom ? 'local' : 'remote'}`}>
+      <section className={`chat-log chat-entry ${props.sender == 'Vladimir' ? 'local' : 'remote'}`}>
         <p className="entry-name"> {props.sender} </p>
         <section className="entry-bubble">
             <p className="entry-body"> {props.body} </p>
