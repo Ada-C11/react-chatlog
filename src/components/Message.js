@@ -2,7 +2,7 @@ import React from 'react';
 import Timestamp from './Timestamp';
 
 const Message = (props) => {
-    let sentFrom = props.sender == 'Vladimir' ? 'local' : 'remote';
+    let sentFrom = props.sender === 'Vladimir' ? 'local' : 'remote';
 
     return (
       <section className={`chat-log chat-entry ${sentFrom}`}>
