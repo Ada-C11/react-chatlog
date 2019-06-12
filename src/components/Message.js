@@ -4,7 +4,6 @@ import './Message.css';
 import PropTypes from 'prop-types';
 
 const Message = (props) =>{
-    const time = props.timestamp;
     let localOrRemote;
     if (props.sender === "Estragon"){
         localOrRemote = "chat-entry local";
@@ -23,7 +22,7 @@ const Message = (props) =>{
                     {props.body}
                 </div>
                 <div className="entry-time">
-                    <Timestamp time={time}/>
+                    <Timestamp time={props.timestamp}/>
                 </div>
             </div>
         </section>
