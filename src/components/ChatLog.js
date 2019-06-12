@@ -25,7 +25,9 @@ const ChatLog = (props) => {
 };
 
 ChatLog.propTypes = {
-  entries: PropTypes.array,
+  entries: PropTypes.arrayOf(
+    PropTypes.objectOf(PropTypes.string)
+    ),
 };
 
 
