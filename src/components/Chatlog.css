@@ -6,3 +6,7 @@
   max-width: 50rem;
   margin: auto;
 }
+
+li {
+  list-style-type: none;
+}

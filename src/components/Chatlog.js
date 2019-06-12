@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Sender from './Sender';
 import Message from './Message';
-import Timestamp from './Timestamp';
 import './Chatlog.css';
 
 const Chatlog = (props) => {
@@ -18,5 +16,13 @@ const Chatlog = (props) => {
     <ul className="chat-log">{ messageList }</ul>
   );
 }
+
+
+PropTypes.shape({
+  sender: PropTypes.string,
+  body: PropTypes.string,
+  time: PropTypes.string,
+});
+
 
 export default Chatlog;

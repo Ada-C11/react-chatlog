@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Chatlog from './components/Chatlog';
 import chatMessages from './data/messages.json';
 
 const App = () => {
-  console.log(chatMessages);
-
   return (
     <div className="App">
       <header className="App-header">

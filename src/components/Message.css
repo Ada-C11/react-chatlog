@@ -26,6 +26,7 @@
 .entry-name {
   margin-bottom: 0.5rem;
   font-size: medium;
+  font-weight: bold;
 }
 
 .entry-body {
