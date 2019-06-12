@@ -18,10 +18,10 @@ const Message = (props) => {
   );
 }
 
-PropTypes.shape({
-  sender: PropTypes.string,
-  body: PropTypes.string,
-  time: PropTypes.string,
-});
+Message.propTypes = {
+  sender: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+}
 
 export default Message;

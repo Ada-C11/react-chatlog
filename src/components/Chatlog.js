@@ -18,11 +18,8 @@ const Chatlog = (props) => {
 }
 
 
-PropTypes.shape({
-  sender: PropTypes.string,
-  body: PropTypes.string,
-  time: PropTypes.string,
-});
-
+Chatlog.propTypes = {
+  messages: PropTypes.arrayOf(PropTypes.object).isRequired,
+}
 
 export default Chatlog;
