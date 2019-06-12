@@ -5,8 +5,16 @@ import PropTypes from 'prop-types';
 
 const Message = (props) =>{
     const time = props.timestamp;
+    let localOrRemote;
+    if (props.sender === "Estragon"){
+        localOrRemote = "chat-entry local";
+    }
+
+    if (props.sender === "Vladimir"){
+        localOrRemote = "chat-entry remote";
+    }
     return (
-        <section className="chat-entry">
+        <section className={localOrRemote}>
             <div className="entry-name">
                     {props.sender}
             </div>
@@ -19,13 +27,13 @@ const Message = (props) =>{
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 Message.propTypes = {
     sender: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
-    
+
 
 }
 
