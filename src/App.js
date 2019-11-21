@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
+import Chatlog from './components/Chatlog';
 import chatMessages from './data/messages.json';
 
 const App = () => {
-  console.log(chatMessages);
-
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">Chat between Vladimir and Estragon</h1>
       </header>
       <main className="App-main">
-
+        <Chatlog messages={ chatMessages } />
       </main>
     </div>
   );
